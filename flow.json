@@ -1,0 +1,250 @@
+{
+	"contracts": {
+		"DeFiActions": {
+			"source": "./lib/tidal-sc/lib/TidalProtocol/DeFiActions/cadence/contracts/interfaces/DeFiActions.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"testing": "0000000000000007"
+			}
+		},
+		"DeFiActionsMathUtils": {
+			"source": "./lib/tidal-sc/lib/TidalProtocol/DeFiActions/cadence/contracts/utils/DeFiActionsMathUtils.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"testing": "0000000000000007"
+			}
+		},
+		"DeFiActionsUtils": {
+			"source": "./lib/tidal-sc/lib/TidalProtocol/DeFiActions/cadence/contracts/utils/DeFiActionsUtils.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"testing": "0000000000000007"
+			}
+		},
+		"SimpleTidalStrategy": {
+			"source": "./cadence/contracts/SimpleTidalStrategy.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"testing": "0000000000000011"
+			}
+		},
+		"FlowLiquidStakingStrategy": {
+			"source": "./cadence/contracts/FlowLiquidStakingStrategy.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"testing": "0000000000000012"
+			}
+		},
+		"TidalYield": {
+			"source": "./lib/tidal-sc/cadence/contracts/TidalYield.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"testing": "0000000000000009"
+			}
+		},
+		"TidalYieldClosedBeta": {
+			"source": "./lib/tidal-sc/cadence/contracts/TidalYieldClosedBeta.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"testing": "0000000000000009"
+			}
+		}
+	},
+	"dependencies": {
+		"Burner": {
+			"source": "mainnet://f233dcee88fe0abe.Burner",
+			"hash": "71af18e227984cd434a3ad00bb2f3618b76482842bae920ee55662c37c8bf331",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "f233dcee88fe0abe",
+				"testnet": "9a0766d93b6608b7"
+			}
+		},
+		"DelegatorManager": {
+			"source": "mainnet://d6f80565193ad727.DelegatorManager",
+			"hash": "9f6a73cdad64601864b8e744defe202dfd460ebe2df1d5d1d9dcacb385fb1357",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "d6f80565193ad727",
+				"testing": "0000000000000012"
+			}
+		},
+		"FlowClusterQC": {
+			"source": "mainnet://8624b52f9ddcd04a.FlowClusterQC",
+			"hash": "5fd45018af7e3b7606caf437dd0b6be72f698556313754c12308b8d5b174051d",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "8624b52f9ddcd04a",
+				"testnet": "9eca2b38b18b5dfe"
+			}
+		},
+		"FlowDKG": {
+			"source": "mainnet://8624b52f9ddcd04a.FlowDKG",
+			"hash": "90b4397f0dba0b3d3ef9935b59aeef19790cfd8a6c9d96c42121ce723b2d5c2b",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "8624b52f9ddcd04a",
+				"testnet": "9eca2b38b18b5dfe"
+			}
+		},
+		"FlowEpoch": {
+			"source": "mainnet://8624b52f9ddcd04a.FlowEpoch",
+			"hash": "9184449afbfb33e85e3e445b16e05f40cbb6e16c11a91db9515f82759977b867",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "8624b52f9ddcd04a",
+				"testnet": "9eca2b38b18b5dfe"
+			}
+		},
+		"FlowFees": {
+			"source": "mainnet://f919ee77447b7497.FlowFees",
+			"hash": "d02bc8295c0434cf2b0a96a77d992f49f52e7865debda84e7a21e176e163a680",
+			"aliases": {
+				"emulator": "e5a8b7f23e8b548f",
+				"mainnet": "f919ee77447b7497",
+				"testnet": "912d5440f7e3769e"
+			}
+		},
+		"FlowIDTableStaking": {
+			"source": "mainnet://8624b52f9ddcd04a.FlowIDTableStaking",
+			"hash": "c7db781612dfb53de294da564814b3b57dd0a7b7f23fec54ab3b80125cfd3635",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "8624b52f9ddcd04a",
+				"testnet": "9eca2b38b18b5dfe"
+			}
+		},
+		"FlowStorageFees": {
+			"source": "mainnet://e467b9dd11fa00df.FlowStorageFees",
+			"hash": "e38d8a95f6518b8ff46ce57dfa37b4b850b3638f33d16333096bc625b6d9b51a",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "e467b9dd11fa00df",
+				"testnet": "8c5303eaa26202d6"
+			}
+		},
+		"FlowToken": {
+			"source": "mainnet://1654653399040a61.FlowToken",
+			"hash": "cefb25fd19d9fc80ce02896267eb6157a6b0df7b1935caa8641421fe34c0e67a",
+			"aliases": {
+				"emulator": "0ae53cb6e3f42a79",
+				"mainnet": "1654653399040a61",
+				"testnet": "7e60df042a9c0868"
+			}
+		},
+		"FungibleToken": {
+			"source": "mainnet://f233dcee88fe0abe.FungibleToken",
+			"hash": "23c1159cf99b2b039b6b868d782d57ae39b8d784045d81597f100a4782f0285b",
+			"aliases": {
+				"emulator": "ee82856bf20e2aa6",
+				"mainnet": "f233dcee88fe0abe",
+				"testnet": "9a0766d93b6608b7"
+			}
+		},
+		"FungibleTokenMetadataViews": {
+			"source": "mainnet://f233dcee88fe0abe.FungibleTokenMetadataViews",
+			"hash": "dff704a6e3da83997ed48bcd244aaa3eac0733156759a37c76a58ab08863016a",
+			"aliases": {
+				"emulator": "ee82856bf20e2aa6",
+				"mainnet": "f233dcee88fe0abe",
+				"testnet": "9a0766d93b6608b7"
+			}
+		},
+		"LiquidStaking": {
+			"source": "mainnet://d6f80565193ad727.LiquidStaking",
+			"hash": "6020c31364ed927e11d11fc0b28ecac7f3794a29dae957ff15c3ee2abaf2cf03",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "d6f80565193ad727",
+				"testing": "0000000000000012"
+			}
+		},
+		"LiquidStakingConfig": {
+			"source": "mainnet://d6f80565193ad727.LiquidStakingConfig",
+			"hash": "fe8d3ef77c39ff1900fb56acab38aecff07391b48dfb1d381c99ddad2e560fa7",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "d6f80565193ad727",
+				"testing": "0000000000000012"
+			}
+		},
+		"LiquidStakingError": {
+			"source": "mainnet://d6f80565193ad727.LiquidStakingError",
+			"hash": "a92f260f9655fb46af1bb212a7d209b00466560472fed0cd1ae5a18f371a10d4",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "d6f80565193ad727",
+				"testing": "0000000000000012"
+			}
+		},
+		"MetadataViews": {
+			"source": "mainnet://1d7e57aa55817448.MetadataViews",
+			"hash": "9032f46909e729d26722cbfcee87265e4f81cd2912e936669c0e6b510d007e81",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "1d7e57aa55817448",
+				"testnet": "631e88ae7f1d7c20"
+			}
+		},
+		"NonFungibleToken": {
+			"source": "mainnet://1d7e57aa55817448.NonFungibleToken",
+			"hash": "b63f10e00d1a814492822652dac7c0574428a200e4c26cb3c832c4829e2778f0",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "1d7e57aa55817448",
+				"testnet": "631e88ae7f1d7c20"
+			}
+		},
+		"ViewResolver": {
+			"source": "mainnet://1d7e57aa55817448.ViewResolver",
+			"hash": "374a1994046bac9f6228b4843cb32393ef40554df9bd9907a702d098a2987bde",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "1d7e57aa55817448",
+				"testnet": "631e88ae7f1d7c20"
+			}
+		},
+		"stFlowToken": {
+			"source": "mainnet://d6f80565193ad727.stFlowToken",
+			"hash": "09b1350a55646fdee652fddf7927fc4b305da5a265cb1bd887e112d84fb5e2be",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "d6f80565193ad727",
+				"testing": "0000000000000012"
+			}
+		}
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testing": "127.0.0.1:3569",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": {
+				"type": "file",
+				"location": "lib/tidal-sc/local/emulator-account.pkey"
+			}
+		}
+	},
+	"deployments": {
+		"emulator": {
+			"emulator-account": [
+				"DeFiActionsMathUtils",
+				"DeFiActionsUtils",
+				"DeFiActions",
+				"TidalYieldClosedBeta",
+				"TidalYield",
+				"SimpleTidalStrategy",
+				"LiquidStaking",
+				"LiquidStakingConfig",
+				"LiquidStakingError",
+				"DelegatorManager",
+				"FlowLiquidStakingStrategy",
+				"stFlowToken"
+			]
+		}
+	}
+}
