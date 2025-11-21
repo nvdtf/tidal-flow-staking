@@ -1,5 +1,5 @@
-access(all)
 import Test
+import BlockchainHelpers
 
 access(all)
 fun deployTidalContracts() {
@@ -51,4 +51,21 @@ fun getCurrentFlowBalance(user: Test.TestAccount): UFix64 {
     Test.expect(script, Test.beSucceeded())
     var balance = script.returnValue as! UFix64
     return balance
+}
+
+access(all)
+fun setupLiquidStaking() {
+    let adminAccount = Test.getAccount(0x12)
+
+    var err = mintFlow(to: adminAccount, amount: 100.0)
+    Test.expect(err, Test.beSucceeded())
+
+    let initDelegatorNodes = Test.Transaction(
+        code: Test.readFile("transactions/staking/init_staking_nodes.cdc"),
+        authorizers: [adminAccount.address],
+        signers: [adminAccount],
+        arguments: []
+    )
+    let txResult = Test.executeTransaction(initDelegatorNodes)
+    Test.expect(txResult, Test.beSucceeded())
 }

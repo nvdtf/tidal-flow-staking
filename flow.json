@@ -159,6 +159,15 @@
 				"testing": "0000000000000012"
 			}
 		},
+		"FlowTransactionScheduler": {
+			"source": "testnet://8c5303eaa26202d6.FlowTransactionScheduler",
+			"hash": "7a2f0b22b53251065fa5db64b6c4329a7bf637012a006ab0b345f28e3b340db7",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "e467b9dd11fa00df",
+				"testnet": "8c5303eaa26202d6"
+			}
+		},
 		"LiquidStakingConfig": {
 			"source": "mainnet://d6f80565193ad727.LiquidStakingConfig",
 			"hash": "fe8d3ef77c39ff1900fb56acab38aecff07391b48dfb1d381c99ddad2e560fa7",

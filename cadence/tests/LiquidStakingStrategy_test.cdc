@@ -51,6 +51,9 @@ fun setup() {
         arguments: []
     )
     Test.expect(err, Test.beNil())
+
+    // Setup liquid staking contract parameters
+    setupLiquidStaking()
 }
 
 access(all)
